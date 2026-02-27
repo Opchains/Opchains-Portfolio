@@ -35,8 +35,8 @@ const featuredProjects = [
     description: "A comprehensive dashboard for tracking DeFi positions across multiple chains with real-time analytics.",
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=500&fit=crop",
     tags: ["Web3", "React", "DeFi"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://example.com/defi-dashboard",
+    githubUrl: "https://github.com/Opchains/defi-dashboard",
     featured: true,
   },
   {
@@ -44,16 +44,16 @@ const featuredProjects = [
     description: "A sleek marketplace for trading digital collectibles with gas-optimized smart contracts.",
     image: "https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?w=600&h=400&fit=crop",
     tags: ["Solidity", "Next.js"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://example.com/nft-marketplace",
+    githubUrl: "https://github.com/Opchains/nft-marketplace",
   },
   {
     title: "AI Code Assistant",
     description: "An intelligent coding companion powered by machine learning to boost productivity.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
     tags: ["AI/ML", "Python"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://example.com/ai-code-assistant",
+    githubUrl: "https://github.com/Opchains/ai-code-assistant",
   },
 ];
 
