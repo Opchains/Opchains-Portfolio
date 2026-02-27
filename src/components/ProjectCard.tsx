@@ -1,5 +1,6 @@
 import { ExternalLink, Github } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 interface ProjectCardProps {
   title: string;
@@ -52,20 +53,26 @@ export const ProjectCard = ({
         
         <div className="flex gap-3">
           {liveUrl && (
-            <Button variant="default" size="sm" asChild>
-              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink size={16} className="mr-2" />
-                Live Demo
-              </a>
-            </Button>
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(buttonVariants({ variant: "default", size: "sm" }))}
+            >
+              <ExternalLink size={16} className="mr-2" />
+              Live Demo
+            </a>
           )}
           {githubUrl && (
-            <Button variant="outline" size="sm" asChild>
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                <Github size={16} className="mr-2" />
-                Code
-              </a>
-            </Button>
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(buttonVariants({ variant: "outline", size: "sm" }))}
+            >
+              <Github size={16} className="mr-2" />
+              Code
+            </a>
           )}
         </div>
       </div>
