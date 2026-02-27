@@ -23,7 +23,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?w=600&h=400&fit=crop",
     tags: ["Solidity", "Next.js", "IPFS"],
     liveUrl: "https://nft-minting-d-app-olive.vercel.app/",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Opchains/NFT-Minting-DApp",
     category: "Web3",
   },
   {
