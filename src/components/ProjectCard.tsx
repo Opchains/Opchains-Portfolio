@@ -21,6 +21,10 @@ export const ProjectCard = ({
   githubUrl,
   featured,
 }: ProjectCardProps) => {
+  const handleButtonClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
+
   return (
     <div
       className={`group relative rounded-xl overflow-hidden glass hover-lift ${
@@ -36,22 +40,24 @@ export const ProjectCard = ({
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
       
-      <div className="p-6">
-        <div className="flex flex-wrap gap-2 mb-3">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="px-2 py-1 text-xs rounded-full bg-primary/20 text-primary font-medium"
-            >
-              {tag}
-            </span>
-          ))}
+      <div className="p-6 flex flex-col justify-between h-full">
+        <div>
+          <div className="flex flex-wrap gap-2 mb-3">
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className="px-2 py-1 text-xs rounded-full bg-primary/20 text-primary font-medium"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+          
+          <h3 className="text-xl font-semibold text-foreground mb-2">{title}</h3>
+          <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{description}</p>
         </div>
         
-        <h3 className="text-xl font-semibold text-foreground mb-2">{title}</h3>
-        <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{description}</p>
-        
-        <div className="flex gap-3 pt-2">
+        <div className="flex gap-3 pt-2 relative z-10" onClick={handleButtonClick}>
           {liveUrl && (
             <a
               href={liveUrl}
