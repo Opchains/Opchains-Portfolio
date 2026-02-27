@@ -51,13 +51,16 @@ export const ProjectCard = ({
         <h3 className="text-xl font-semibold text-foreground mb-2">{title}</h3>
         <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{description}</p>
         
-        <div className="flex gap-3">
+        <div className="flex gap-3 pt-2">
           {liveUrl && (
             <a
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className={cn(buttonVariants({ variant: "default", size: "sm" }))}
+              className={cn(
+                buttonVariants({ variant: "default", size: "sm" }),
+                "cursor-pointer inline-flex items-center justify-center no-underline"
+              )}
             >
               <ExternalLink size={16} className="mr-2" />
               Live Demo
@@ -68,7 +71,10 @@ export const ProjectCard = ({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className={cn(buttonVariants({ variant: "outline", size: "sm" }))}
+              className={cn(
+                buttonVariants({ variant: "outline", size: "sm" }),
+                "cursor-pointer inline-flex items-center justify-center no-underline"
+              )}
             >
               <Github size={16} className="mr-2" />
               Code
