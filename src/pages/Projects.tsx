@@ -33,8 +33,8 @@ const projects = [
     description: "An intelligent coding companion that provides real-time suggestions, code reviews, and documentation generation.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
     tags: ["AI/ML", "Python", "React"],
-    liveUrl: "https://example.com/ai-code-assistant",
-    githubUrl: "https://github.com/Opchains/ai-code-assistant",
+    liveUrl: "https://aura-ai-assistant-five.vercel.app",
+    githubUrl: "https://github.com/Opchains/aura-ai-assistant",
     category: "AI/ML",
   },
   {
