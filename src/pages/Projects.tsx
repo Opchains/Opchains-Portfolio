@@ -60,8 +60,8 @@ const projects = [
     description: "A feature-rich chat application with end-to-end encryption, file sharing, and video calls.",
     image: "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=400&fit=crop",
     tags: ["React", "WebSocket", "Node.js"],
-    liveUrl: "https://example.com/real-time-chat-app",
-    githubUrl: "https://github.com/Opchains/real-time-chat-app",
+    liveUrl: "https://lemi-chat.vercel.app",
+    githubUrl: "https://github.com/Opchains/lemi-chat",
     category: "Full Stack",
   },
   {
